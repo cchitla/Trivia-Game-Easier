@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia</title>
+
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row text-center pt-4">
+            <div class="col-12">
+                TRIVIA
+            </div>
+        </div>
+
+        <!-- timer / gameover text -->
+        <div class="row text-center p-4">
+            <div class="col-12">
+                <p id="timer"></p>
+            </div>
+        </div>
+
+        <!-- question 1-->
+        <div class="row text-center p-4">
+                <div id="question1" class="col-12"></div>
+            </div>
+        <div class="row text-center p-4">
+            <div class="col-12">
+                <form id="question1answers">
+                    <input id="q1correct" type="radio" name="q1answers" value="correct"><span id="q1correct-text"></span>
+                    <input id="q1wrong1" type="radio" name="q1answers" value="wrong"><span id="q1wrong1-text"></span>
+                    <input id="q1wrong2" type="radio" name="q1answers" value="wrong"><span id="q1wrong2-text"></span>
+                    <input id="q1wrong3" type="radio" name="q1answers" value="wrong"><span id="q1wrong3-text"></span>
+                    
+                </form>
+
+            </div>
+
+        </div>
+
+
+        <!-- question 2-->
+        <div class="row text-center p-4">
+                <div id="question2" class="col-12"></div>
+            </div>
+        <div class="row text-center p-4">
+            <div class="col-12">
+                <form id="question2answers">
+                    <input id="q2correct" type="radio" name="q2answers" value="correct"><span id="q2correct-text"></span>
+                    <input id="q2wrong1" type="radio" name="q2answers" value="wrong"><span id="q2wrong1-text"></span>
+                    <input id="q2wrong2" type="radio" name="q2answers" value="wrong"><span id="q2wrong2-text"></span>
+                    <input id="q2wrong3" type="radio" name="q2answers" value="wrong"><span id="q2wrong3-text"></span>
+                    
+                </form>
+
+            </div>
+
+        </div>
+       
+       
+        <!-- question 2-->
+        <div class="row text-center p-4">
+                <div id="question3" class="col-12"></div>
+            </div>
+        <div class="row text-center p-4">
+            <div class="col-12">
+                <form id="question3answers">
+                    <input id="q3correct" type="radio" name="q3answers" value="correct"><span id="q3correct-text"></span>
+                    <input id="q3wrong1" type="radio" name="q3answers" value="wrong"><span id="q3wrong1-text"></span>
+                    <input id="q3wrong2" type="radio" name="q3answers" value="wrong"><span id="q3wrong2-text"></span>
+                    <input id="q3wrong3" type="radio" name="q3answers" value="wrong"><span id="q3wrong3-text"></span>
+                    
+                </form>
+
+            </div>
+
+        </div>
+
+
+        <div class="row text-center p-4">
+            <div class="col-12">
+                <button id="submit">Submit</button>
+                <br>
+                <button id="restart">Restart</button>
+            </div>
+        </div>
+
+    <!-- end of bootstrap container -->
+    </div>
+
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>

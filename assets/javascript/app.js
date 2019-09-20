@@ -11,9 +11,9 @@ $(document).ready(function () {
         };
     };
     
-    let question1 = new Question(1, "What color is the sky", "blue", "green", "red", "yellow");
-    let question2 = new Question(2, "Is the earth flat", "yes", "no", "maybe", "it's a cube");
-    let question3 = new Question(3, "another question", "correct", "wrong", "wrong again", "still wrong");
+    let question1 = new Question(1, "What is the diameter of the earth?", "7,915.5 miles", "4,318.2 miles", "12,845.7 miles", "5,692.4 miles");
+    let question2 = new Question(2, "Whaty is the distance of an astromoical unit (average distance from sun to earth)?", "93 million miles", "40 million miles", "184 million miles", "74 million miles");
+    let question3 = new Question(3, "How many comets are in the solar system?", "4,017", "378", "7,632", "1,493");
 
     function displayQuestions() {
         $("#question1").text(question1.question);
@@ -46,7 +46,7 @@ $(document).ready(function () {
             intervalId = setInterval(count, 1000);
         };
 
-        let counter = 5;
+        let counter = 60;
         $("#timer").text(`Time remaining: ${counter}`);
 
         function count() {
